@@ -1,3 +1,9 @@
+/*
+
+This is terrible code written quickly and without intentionality for the sake of creating something simple as fast as possible. Please do not use this as a means to judge my programming capability. 
+
+*/
+
 var minx = 0;
 var maxx = 800;
 var miny = 0;
@@ -71,9 +77,5 @@ function draw() {
   
   fill('black');
   circle(xpos, ydiff/2 - halfamp * sin(t*360) - houramp * sin(12*t*360) - secamp * sin(60*12*t*360), 3);
-  
-  
-  
-
   
 }
