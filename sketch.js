@@ -5,7 +5,7 @@ This is terrible code written quickly and without intentionality for the sake of
 */
 
 var minx = 0;
-var maxx = 800;
+var maxx = 1600;
 var miny = 0;
 var maxy = 600;
 var ydiff = maxy-miny;
@@ -18,7 +18,7 @@ var catchUpParm = 0.1;
 
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(maxx, maxy);
   angleMode(DEGREES);
   t = (hour()+(minute()+(second())/60)/60)/24;
 }
@@ -41,9 +41,9 @@ function draw() {
   noFill();
   stroke('#C9C9C9');
   beginShape();
-  for (let t = 0; t <= 5*360; t++) {
-    let x = map(t, 0, 5*360, minx, maxx);
-    let y = ydiff/2 - halfamp * sin(t/5) - houramp * sin(12*t/5) - secamp * sin(60*12*t/5);
+  for (let t = 0; t <= 10*360; t++) {
+    let x = map(t, 0, 10*360, minx, maxx);
+    let y = ydiff/2 - halfamp * sin(t/10) - houramp * sin(12*t/10) - secamp * sin(60*12*t/10);
     vertex(x, y);
   }
   endShape();
