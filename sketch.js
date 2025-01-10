@@ -7,7 +7,7 @@ This is terrible code written quickly and without intentionality for the sake of
 var minx = 0;
 var maxx = 1200;
 var miny = 0;
-var maxy = 400;
+var maxy = 800;
 var ydiff = maxy-miny;
 var halfamp = ydiff/4;
 var houramp = ydiff/8;
